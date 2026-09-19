@@ -6,7 +6,6 @@ UART_HandleTypeDef huart1;
 uint8_t buf[32];
 uint16_t cnt = 0;
 //------add------//
-void SystemClock_Config(void);
 
 int main(void)
 {
