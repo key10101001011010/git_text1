@@ -11,10 +11,10 @@ int main(void)
 {
   HAL_Init();
   SystemClock_Config();
-
+//-----sub------//
   MX_GPIO_Init();
   MX_USART1_UART_Init();
-
+//-----a------//
   while (1)
   {
       // LED翻转 PA0
