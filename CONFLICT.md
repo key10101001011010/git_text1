@@ -5,7 +5,7 @@
 UART_HandleTypeDef huart1;
 uint8_t buf[32];
 uint16_t cnt = 0;
-
+//------add------//
 void SystemClock_Config(void);
 
 int main(void)
@@ -21,7 +21,7 @@ int main(void)
       // LED翻转 PA0
       HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0);
 
-      // 格式化字符串
+      
       sprintf((char*)buf,"Count:%d\r\n",cnt);
       // 串口发送
       HAL_UART_Transmit(&huart1, buf, strlen((char*)buf),20);
